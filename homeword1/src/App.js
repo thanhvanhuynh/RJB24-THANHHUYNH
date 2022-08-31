@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React from "react";
+
+const array = [
+  {
+    id: "1",
+    name: "enjoy",
+  },
+  {
+    id: "2",
+    name: "enjoyg",
+  },
+  {
+    id: "3",
+    name: "enjoys",
+  },
+];
+
+const render = (input) => {
+  return (
+    <>
+      <p>{input.id}</p>
+      <p>{input.name}</p>
+    </>
+  );
+};
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return array.map((item) => <div key={item.id}>{render(item)}</div>);
 }
 
 export default App;
