@@ -27,16 +27,41 @@ const array = [
 ];
 const render = (input) => {
   return (
-    <>
-      <img src={"./image/anh hoa.jpg"} className="picture" />
-      <p>{input.firstName}</p>
-      <p>{input.lastName}</p>
-      <p>{input.nickName}</p>
-      <a href="https://www.instagram.com/roses_are_rosie/">dfsfds</a>
-    </>
+    <div>
+      <div className="component">
+        <img src={"./image/anh hoa.jpg"} className="picture" />
+        <p className="text">{input.firstName}</p>
+        <p className="text">{input.lastName}</p>
+        <p className="text">{input.nickName}</p>
+        <a href="https://www.instagram.com/roses_are_rosie/">
+          <button className="button">link tại đây</button>
+        </a>
+      </div>
+    </div>
   );
 };
 function App() {
-  return array.map((item) => <div key={item.id}>{render(item)}</div>);
+  return (
+    <>
+      <div className="container-row">
+        <div className="col-1">
+          {array.map((item) => (
+            <div className="css-col" key={item.id}>
+              {render(item)}
+            </div>
+          ))}
+        </div>
+        ;
+        <div className="col-2">
+          {array.map((item) => (
+            <div className="css-col" key={item.id}>
+              {render(item)}
+            </div>
+          ))}
+        </div>
+        ;
+      </div>
+    </>
+  );
 }
 export default App;
