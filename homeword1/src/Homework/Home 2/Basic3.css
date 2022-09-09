@@ -1,0 +1,17 @@
+.image{
+    width: 500px;
+    height: 300px;
+
+}
+.container{
+    width: 600px;
+    height: 900px;
+    margin: 30px 30%;
+}
+.technology{
+    font-weight: 100;
+
+}
+.date{
+    display: flex;
+}
