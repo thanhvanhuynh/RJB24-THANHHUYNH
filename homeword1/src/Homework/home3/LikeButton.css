@@ -1,0 +1,28 @@
+.heart{
+    color: red;
+     cursor: pointer;
+     font-size: 40px;
+     font-weight: 100;
+ 
+ }
+ .button { 
+     width: 105px;
+     height: 46px;
+     cursor: pointer;
+     background-color: rgb(49, 106, 211);
+     border-radius: 15px;
+     display: flex;
+    
+ } 
+ .text{
+    font-size: 17px;
+    color: white;
+ }
+ 
+    
+ .like{
+     font-size: 40px;
+     font-weight: 100;
+     cursor: pointer;
+     color: white;
+ }
