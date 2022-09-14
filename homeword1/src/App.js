@@ -1,13 +1,12 @@
 import "./App.css";
 import React from "react";
-import LikeButton from "./Homework/home3/LikeButton";
+import Ratebutton from "./Homework/home3/Ratebutton";
 
 function App() {
   return (
     <>
       <div>
-        <LikeButton />
-        {/* <Vidu /> */}
+        <Ratebutton />
       </div>
     </>
   );
